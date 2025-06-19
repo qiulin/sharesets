@@ -3,6 +3,10 @@ name = "sharesets"
 compatibility_date = "2025-03-25"
 compatibility_flags = ["nodejs_compat"]
 
+routes = [
+  { pattern = "sharesets.com", custom_domain = true }
+]
+
 [assets]
 directory = ".open-next/assets"
 binding = "ASSETS"
