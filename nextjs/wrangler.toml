@@ -2,16 +2,23 @@ main = ".open-next/worker.js"
 name = "sharesets"
 compatibility_date = "2025-03-25"
 compatibility_flags = ["nodejs_compat"]
+
 [assets]
 directory = ".open-next/assets"
 binding = "ASSETS"
 
+[observability]
+enabled = true
+head_sampling_rate = 1 # optional. default = 1.
+
 [vars]
-NEXT_PUBLIC_SUPABASE_URL = "https://YOURSUPABASE.supabase.co"
-NEXT_PUBLIC_SUPABASE_ANON_KEY = "YYY"
-PRIVATE_SUPABASE_SERVICE_KEY = "XXX"
-NEXT_PUBLIC_PRODUCTNAME = "BasicSass"
-NEXT_PUBLIC_SSO_PROVIDERS = "github,google,facebook,apple"
+NEXT_PUBLIC_SUPABASE_URL = "https://ryiuvjvestmefytiztin.supabase.co"
+NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ5aXV2anZlc3RtZWZ5dGl6dGluIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAzMzM3NTUsImV4cCI6MjA2NTkwOTc1NX0.Zs3nc62Xezj4ZZmqpVst1JO8ZcwSeP96c3ws_YYlBJw"
+PRIVATE_SUPABASE_SERVICE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ5aXV2anZlc3RtZWZ5dGl6dGluIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MDMzMzc1NSwiZXhwIjoyMDY1OTA5NzU1fQ.ejK94dhccZuWyknSd8CXFsTvqrS3fY1VSIESMrL65wg"
+NEXT_PUBLIC_PRODUCTNAME = "ShareSets"
+# NEXT_PUBLIC_SSO_PROVIDERS=github,google,facebook,apple
+NEXT_PUBLIC_SSO_PROVIDERS = "github"
+
 
 NEXT_PUBLIC_GOOGLE_TAG = "G-GOOGLETAG"
 NEXT_PUBLIC_THEME = "theme-sass"
