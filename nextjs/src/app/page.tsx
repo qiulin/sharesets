@@ -71,7 +71,8 @@ export default function Home() {
                 <Link href="#pricing" className="text-gray-600 hover:text-gray-900">
                   Pricing
                 </Link>
-                <Link
+
+                {/* <Link
                     href="https://github.com/Razikus/supabase-nextjs-template"
                     className="text-gray-600 hover:text-gray-900"
                     target="_blank"
@@ -88,7 +89,7 @@ export default function Home() {
                 >
                   Grab This Template
                 </Link>
-
+ */}
                 <AuthAwareButtons variant="nav" />
               </div>
             </div>
