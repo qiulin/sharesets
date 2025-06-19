@@ -3,9 +3,14 @@ import {Database} from "@/lib/types";
 
 export async function createServerAdminClient() {
 
+    const apiUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const serviceKey = process.env.PRIVATE_SUPABASE_SERVICE_KEY;
+
+    console.info({'api_url': apiUrl, 'service_key': serviceKey});
+
     return createServerClient<Database>(
-        process.env.NEXT_PUBLIC_SUPABASE_URL!,
-        process.env.PRIVATE_SUPABASE_SERVICE_KEY!,
+        apiUrl!,
+        serviceKey!,
         {
             cookies: {
                 getAll: () => [],
