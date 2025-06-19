@@ -5,10 +5,14 @@ import {Database} from "@/lib/types";
 
 export async function createSSRClient() {
     const cookieStore = await cookies()
+    const apiUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const apiKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+    console.debug({'api_url': apiUrl, 'api_key': apiKey});
 
     return createServerClient<Database>(
-        process.env.NEXT_PUBLIC_SUPABASE_URL!,
-        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+        apiUrl!,
+        apiKey!,
         {
             cookies: {
                 getAll() {
