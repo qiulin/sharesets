@@ -23,6 +23,7 @@ export default function FileManagementPage() {
     const [showCopiedMessage, setShowCopiedMessage] = useState(false);
     const [isDragging, setIsDragging] = useState(false);
 
+    // 测试
     useEffect(() => {
         if (user?.id) {
             loadFiles();
