@@ -6,7 +6,7 @@ import HomePricing from "@/components/HomePricing";
 
 export default function Home() {
   const productName = process.env.NEXT_PUBLIC_PRODUCTNAME;
-  console.log({ "product_name": productName })
+  // console.log({ "product_name": productName })
 
   const features = [
     {
