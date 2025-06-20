@@ -8,9 +8,9 @@ routes = [
   { pattern = "www.sharesets.com", custom_domain = true }
 ]
 
-[assets]
-directory = ".open-next/assets"
-binding = "ASSETS"
+# [assets]
+# directory = ".open-next/assets"
+# binding = "ASSETS"
 
 [observability]
 enabled = true
